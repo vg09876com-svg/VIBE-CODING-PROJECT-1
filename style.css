@@ -1,0 +1,89 @@
+/* Custom Serif Typography & Warm Beige Palette */
+
+:root {
+  --beige: #f5f0e6;
+  --charcoal: #2c2c2c;
+  --stone: #8a817c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  background-color: var(--beige);
+  color: var(--charcoal);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+.bg-beige {
+  background-color: var(--beige);
+}
+
+.text-charcoal {
+  color: var(--charcoal);
+}
+
+.text-stone {
+  color: var(--stone);
+}
+
+.border-charcoal {
+  border-color: var(--charcoal);
+}
+
+.hover\:bg-charcoal:hover {
+  background-color: var(--charcoal);
+}
+
+.hover\:text-beige:hover {
+  color: var(--beige);
+}
+
+.hero-section {
+  animation: fadeInUp 1.2s ease-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-text {
+  animation: fadeInUp 1.2s ease-out 0.2s both;
+}
+
+.name-heading {
+  animation: fadeInUp 1.2s ease-out 0.35s both;
+}
+
+.subtitle-text {
+  animation: fadeInUp 1.2s ease-out 0.5s both;
+}
+
+#projects-btn {
+  animation: fadeInUp 1.2s ease-out 0.65s both;
+}
+
+@media (max-width: 640px) {
+  .name-heading {
+    font-size: 2.75rem;
+    line-height: 1.1;
+  }
+}
